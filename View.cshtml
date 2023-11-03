@@ -1,0 +1,28 @@
+﻿@model WebForm2.Models.UpdateStudentViewModel
+@{
+}
+<h1 class="mb-5">Students Details</h1>
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Phone</label>
+        <input type="text" class="form-control" asp-for="Phone">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-danger" asp-controller="Students" asp-action="Delete">Delete</button>
+</form>
